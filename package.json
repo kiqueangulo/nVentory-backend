@@ -1,0 +1,20 @@
+{
+  "name": "nventory-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiqueangulo/nVentory-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiqueangulo/nVentory-backend/issues"
+  },
+  "homepage": "https://github.com/kiqueangulo/nVentory-backend#readme"
+}
