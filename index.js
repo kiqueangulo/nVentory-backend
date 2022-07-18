@@ -1,12 +1,24 @@
 //DEPENDENCIES
 const express = require("express");
+const db = require('./models/index.js');
+const { Sequelize } = require('sequelize')
 const app = express();
+
+// CONFIGURATION / MIDDLEWARE
+require('dotenv').config();
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+// ROOT
+
+//nVentory ROUTES
 
 
 //LISTEN
-app.listen(3000, () => {
-  console.log('server is listening');
-});
+  app.listen(process.env.PORT, () => {
+    console.log(`server is listening on port: ${process.env.PORT}`);
+  });
+
 
 
 //DIRECTIONS FOR SETTING UP HEROKU HERE.
