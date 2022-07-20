@@ -18,7 +18,7 @@ app.get('/', (req, res) =>{
 
 //CONTROLLERS
 const productsController = require('./controllers/products_controller')
-app.use('./products', bandsController)
+app.use('./products', productsController)
 
 
 //LISTEN
