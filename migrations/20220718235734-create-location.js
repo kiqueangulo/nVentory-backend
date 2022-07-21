@@ -12,6 +12,14 @@ module.exports = {
         allowNull: false,
         type: Sequelize.INTEGER
       },
+      shelf_letter: {
+        allowNull: false,
+        type: Sequelize.STRING
+      },
+      shelf_div: {
+        allowNull: false,
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

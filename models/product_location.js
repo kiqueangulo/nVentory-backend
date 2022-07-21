@@ -23,10 +23,16 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   product_location.init({
-    location_id: DataTypes.INTEGER
+    product_location_id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+      allowNull: false
+    }
   }, {
     sequelize,
     modelName: 'product_location',
+    tableName: 'product_location'
   });
   return product_location;
 };

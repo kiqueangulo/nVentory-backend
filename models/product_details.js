@@ -14,12 +14,32 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   product_details.init({
-    name: DataTypes.STRING,
-    brand: DataTypes.STRING,
-    quantity: DataTypes.INTEGER
+    product_id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+      allowNull: false
+    },
+    name: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+    brand: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+    quantity: {
+    type: DataTypes.INTEGER,
+    allowNull:false
+  }, 
+    price: {
+    type: DataTypes.DECIMAL,
+    allowNull: false
+    }
   }, {
     sequelize,
     modelName: 'product_details',
+    tableName: 'product_details'
   });
   return product_details;
 };

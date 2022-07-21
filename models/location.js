@@ -14,10 +14,28 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   location.init({
-    sections: DataTypes.INTEGER
+    location_id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+      allowNull: false
+    },
+    sections: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    shelf_letter: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    shelf_div: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    }
   }, {
     sequelize,
     modelName: 'location',
+    tableName: 'location'
   });
   return location;
 };
