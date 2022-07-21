@@ -4,7 +4,7 @@ const db = require('../models')
 const {  product_details } = db 
 const { Op } = require('sequelize')
 
-// FIND ALL BANDS
+// LIST ALL PRODUCTS
 products.get('/', async (req, res) => {
     try {
         const foundProducts = await product_details.findAll({
