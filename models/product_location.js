@@ -13,12 +13,14 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       //product_details
       product_location.belongsTo(product_details, {
-        foreignKey: { name: "product_id", field: "product_id" }
+        foreignKey: { name: "product_id", field: "product_id" },
+        as: "products"
       });
 
       //location
       product_location.belongsTo(location, {
-        foreignKey: { name: "location_id", field: "location_id" }
+        foreignKey: { name: "location_id", field: "location_id" },
+        as: "locations"
       });
     }
   }
