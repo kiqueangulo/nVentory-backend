@@ -26,7 +26,7 @@ app.use('./products', productsController)
     console.log(`server is listening on port: ${process.env.PORT}`);
   });
 
-  module.exports = router;
+ 
 
 //DIRECTIONS FOR SETTING UP HEROKU HERE.
 // const { Client } = require('pg');
