@@ -20,10 +20,10 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false
       },
-      shelf_letter: {
-        type: Sequelize.STRING,
+      price: {
+        type: Sequelize.DECIMAL,
         allowNull: false
-      },
+        },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

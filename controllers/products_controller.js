@@ -77,4 +77,4 @@ products.delete('/:id', async (req, res) => {
     }
 })
 
-module.export = products
+module.exports = products;
