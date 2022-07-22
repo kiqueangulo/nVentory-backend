@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
     sections: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false
     },
     shelf_letter: {

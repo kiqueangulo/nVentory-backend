@@ -4,102 +4,102 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('locations', [
       {
-        sections: 1,
+        sections: 'Dairy',
         shelf_letter: 'A',
         shelf_div: 2
       },
       {
-        sections: 2,
+        sections: 'Meat',
         shelf_letter: 'A',
         shelf_div: 5
       },
       {
-        sections: 3,
+        sections: 'Condiments',
         shelf_letter: 'B',
         shelf_div: 3
       },
       {
-        sections: 4,
+        sections: 'Produce',
         shelf_letter: 'C',
         shelf_div: 5
       },
       {
-        sections: 5,
+        sections: 'Juices',
         shelf_letter: 'A',
         shelf_div: 2
       },
       {
-        sections: 1,
+        sections: 'Dairy',
         shelf_letter: 'A',
         shelf_div: 3
       },
       {
-        sections: 2,
+        sections: 'Meat',
         shelf_letter: 'A',
         shelf_div: 4
       },
       {
-        sections: 6,
+        sections: 'Bread',
         shelf_letter: 'C',
         shelf_div: 2
       },
       {
-        sections: 2,
+        sections: 'Meat',
         shelf_letter: 'A',
         shelf_div: 3
       },
       {
-        sections: 2,
+        sections: 'Meat',
         shelf_letter: 'A',
         shelf_div: 2
       },
       {
-        sections: 1,
+        sections: 'Dairy',
         shelf_letter: 'A',
         shelf_div: 4
       },
       {
-        sections: 4,
+        sections: 'Produce',
         shelf_letter: 'C',
         shelf_div: 4
       },
       {
-        sections: 4,
+        sections: 'Produce',
         shelf_letter: 'C',
         shelf_div: 3
       },
       {
-        sections: 9,
+        sections: 'Breakfast',
         shelf_letter: 'A',
         shelf_div: 1
       },
       {
-        sections: 7,
+        sections: 'Adult Beverages',
         shelf_letter: 'A',
         shelf_div: 2
       },
       {
-        sections: 7,
+        sections: 'Adult Beverages',
         shelf_letter: 'A',
         shelf_div: 1
       },
       {
-        sections: 8,
+        sections: 'Snacks',
         shelf_letter: 'B',
         shelf_div: 2
       },
       {
-        sections: 8,
+        sections: 'Snacks',
         shelf_letter: 'B',
         shelf_div: 1
       },
       {
-        sections: 4,
+        sections: 'Produce',
         shelf_letter: 'C',
         shelf_div: 2
       },
       {
-        sections: 1,
+        sections: 'Dairy',
         shelf_letter: 'A',
         shelf_div: 1
       },
