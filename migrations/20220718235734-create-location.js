@@ -10,7 +10,7 @@ module.exports = {
       },
       sections: {
         allowNull: false,
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       shelf_letter: {
         allowNull: false,
