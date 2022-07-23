@@ -1,3 +1,5 @@
+
+
 //DEPENDENCIES
 const products = require('express').Router()
 const db = require('../models')
@@ -7,11 +9,7 @@ const { Op } = require('sequelize')
 // LIST ALL PRODUCTS
 products.get('/', async (req, res) => {
     try {
-        const foundProducts = await ProductDetails.findAll({
-            where: {
-                name: { [Op.like]: `%${req.query.name ? req.query.name : ''}%` }
-            }
-        })
+        const foundProducts = await ProductDetails.findAll()
         console.log(foundProducts)
         res.status(200).json(foundProducts)
     } catch (error) {

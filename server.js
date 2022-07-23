@@ -17,8 +17,12 @@ app.get('/', (req, res) =>{
 })
 
 //CONTROLLERS
+//PRODUCTS
 const productsController = require('./controllers/products_controller')
 app.use('/products', productsController)
+//LOCATIONS
+const locationController = require('./controllers/locations_controller')
+app.use('/locations', locationController)
 
 
 //LISTEN
