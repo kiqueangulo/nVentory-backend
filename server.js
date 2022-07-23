@@ -4,8 +4,6 @@ const app = express();
 const { Sequelize } = require('sequelize')
 const db = require('./models/index.js');
 
-
-
 // CONFIGURATION / MIDDLEWARE
 require('dotenv').config();
 app.use(express.json());

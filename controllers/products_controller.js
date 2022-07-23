@@ -1,18 +1,14 @@
 //DEPENDENCIES
 const products = require('express').Router()
 const db = require('../models')
-const {  product_details } = db 
+const {  ProductDetails } = db 
 const { Op } = require('sequelize')
 
 // LIST ALL PRODUCTS
 products.get('/', async (req, res) => {
     try {
-        const foundProducts = await product_details.findAll({
-            //order: [ [ 'last_updated' ] ],
-            where: {
-                name: { [Op.like]: `%${req.query.name ? req.query.name : ''}%` }
-            }
-        })
+        const foundProducts = await ProductDetails.findAll()
+        console.log(foundProducts)
         res.status(200).json(foundProducts)
     } catch (error) {
         res.status(500).json(error)
@@ -22,7 +18,7 @@ products.get('/', async (req, res) => {
 //FIND A PRODUCT
 products.get('/:name', async (req, res) => {
     try {
-        const foundBand = await product_details.findOne({
+        const foundBand = await ProductDetails.findOne({
             where: { name: req.params.name },
         })
 
@@ -35,7 +31,7 @@ products.get('/:name', async (req, res) => {
 //CREATE PRODUCT
 products.post('/', async (req, res) => {
     try {
-        const newProduct = await product_details.create(req.body)
+        const newProduct = await ProductDetails.create(req.body)
         res.status(200).json({
             message: 'New product added to nVentory',
             data: newProduct
@@ -48,7 +44,7 @@ products.post('/', async (req, res) => {
 //UPDATE PRODUCT
 products.put('/:id', async (req, res) => {
    try {
-    const updateProducts = await product_details.update(req.body, {
+    const updateProducts = await ProductDetails.update(req.body, {
         where: {
             product_id: req.params.id
         }
@@ -64,7 +60,7 @@ products.put('/:id', async (req, res) => {
 //DELETE PRODUCTS
 products.delete('/:id', async (req, res) => {
     try {
-        const deleteProducts = await product_details.destroy({
+        const deleteProducts = await ProductDetails.destroy({
             where: {
                 product_id: req.params.id
             }
