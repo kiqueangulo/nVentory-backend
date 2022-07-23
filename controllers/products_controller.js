@@ -7,7 +7,11 @@ const { Op } = require('sequelize')
 // LIST ALL PRODUCTS
 products.get('/', async (req, res) => {
     try {
-        const foundProducts = await ProductDetails.findAll()
+        const foundProducts = await ProductDetails.findAll({
+            where: {
+                name: { [Op.like]: `%${req.query.name ? req.query.name : ''}%` }
+            }
+        })
         console.log(foundProducts)
         res.status(200).json(foundProducts)
     } catch (error) {
