@@ -35,7 +35,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'location',
-    tableName: 'location',
+    tableName: 'locations',
     timestamps: false
   });
   return location;
