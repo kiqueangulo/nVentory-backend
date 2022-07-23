@@ -8,7 +8,7 @@ const { Op } = require('sequelize')
 products.get('/', async (req, res) => {
     try {
         const foundProducts = await product_details.findAll({
-            order: [ [ 'last_updated' ] ],
+            //order: [ [ 'last_updated' ] ],
             where: {
                 name: { [Op.like]: `%${req.query.name ? req.query.name : ''}%` }
             }
