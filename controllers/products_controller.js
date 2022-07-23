@@ -18,7 +18,7 @@ products.get('/', async (req, res) => {
 //FIND A PRODUCT
 products.get('/:name', async (req, res) => {
     try {
-        const foundBand = await ProductDetails.findOne({
+        const foundProducts = await ProductDetails.findOne({
             where: { name: req.params.name },
         })
 
