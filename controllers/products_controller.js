@@ -1,5 +1,3 @@
-
-
 //DEPENDENCIES
 const products = require('express').Router()
 const db = require('../models')

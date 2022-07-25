@@ -1,7 +1,7 @@
 //DEPENDENCIES
 const locations = require('express').Router()
 const db = require('../models')
-const {  location, ProductDetails } = db 
+const {  location } = db 
 const { Op } = require('sequelize')
 
 // LIST ALL LOCATION
