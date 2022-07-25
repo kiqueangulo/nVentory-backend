@@ -1,13 +1,13 @@
 //DEPENDENCIES
 const location = require('express').Router()
 const db = require('../models')
-const {  locations } = db 
+const {  Locations } = db 
 const { Op } = require('sequelize')
 
 // LIST ALL LOCATIONS
 location.get('/', async (req, res) => {
     try {
-        const foundLocation = await locations.findAll()
+        const foundLocation = await Locations.findAll()
         console.log(foundLocation)
         res.status(200).json(foundLocation)
     } catch (error) {
@@ -18,7 +18,7 @@ location.get('/', async (req, res) => {
 //FIND ALL LOCATIONS
 location.get('/:id', async (req, res) => {
     try {
-        const foundLocation = await locations.findOne({
+        const foundLocation = await Locations.findOne({
             where: { location_id: req.params.id },
         })
 
@@ -31,7 +31,7 @@ location.get('/:id', async (req, res) => {
 // CREATE LOCATION
 location.post('/', async (req, res) => {
     try {
-        const newLocation = await locations.create(req.body)
+        const newLocation = await Locations.create(req.body)
         res.status(200).json({
             message: 'New location added to nVentory',
             data: newLocation
@@ -44,7 +44,7 @@ location.post('/', async (req, res) => {
 // UPDATE LOCATION
 location.put('/:id', async (req, res) => {
     try {
-        const updateLocation = await locations.update(req.body, {
+        const updateLocation = await Locations.update(req.body, {
             where: {
                 location_id: req.params.id
             }
@@ -60,7 +60,7 @@ location.put('/:id', async (req, res) => {
 // DELETE LOCATION
 location.delete('/:id', async (req, res) => {
     try {
-        const deleteLocation = await locations.destroy({
+        const deleteLocation = await Locations.destroy({
             where: {
                 location_id: req.params.id
             }
