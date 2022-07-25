@@ -4,7 +4,7 @@ module.exports = {
   "development2": {
     "username": "postgres",
     "password": "qwerty",
-    "database": "nventory_test3",
+    "database": "nventory_test4",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },

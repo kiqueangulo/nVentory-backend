@@ -1,13 +1,13 @@
 //DEPENDENCIES
-const locations = require('express').Router()
+const location = require('express').Router()
 const db = require('../models')
-const {  location } = db 
+const {  locations } = db 
 const { Op } = require('sequelize')
 
 // LIST ALL PRODUCTS
-locations.get('/', async (req, res) => {
+location.get('/', async (req, res) => {
     try {
-        const foundLocation = await location.findAll()
+        const foundLocation = await locations.findAll()
         console.log(foundLocation)
         res.status(200).json(foundLocation)
     } catch (error) {
@@ -16,4 +16,4 @@ locations.get('/', async (req, res) => {
 })
 
 
-module.exports = locations;
+module.exports = location;
