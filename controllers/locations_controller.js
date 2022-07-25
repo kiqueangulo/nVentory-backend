@@ -1,13 +1,13 @@
 //DEPENDENCIES
-const locations = require('express').Router()
+const location = require('express').Router()
 const db = require('../models')
-const {  location } = db 
+const {  locations } = db 
 const { Op } = require('sequelize')
 
-// LIST ALL LOCATION
-locations.get('/', async (req, res) => {
+// LIST ALL LOCATIONS
+location.get('/', async (req, res) => {
     try {
-        const foundLocation = await location.findAll()
+        const foundLocation = await locations.findAll()
         console.log(foundLocation)
         res.status(200).json(foundLocation)
     } catch (error) {
@@ -15,10 +15,10 @@ locations.get('/', async (req, res) => {
     }
 })
 
-// FIND A LOCATION
-locations.get('/:id', async (req, res) => {
+//FIND ALL LOCATIONS
+location.get('/:id', async (req, res) => {
     try {
-        const foundLocation = await location.findOne({
+        const foundLocation = await locations.findOne({
             where: { location_id: req.params.id },
         })
 
@@ -29,9 +29,9 @@ locations.get('/:id', async (req, res) => {
 })
 
 // CREATE LOCATION
-locations.post('/', async (req, res) => {
+location.post('/', async (req, res) => {
     try {
-        const newLocation = await location.create(req.body)
+        const newLocation = await locations.create(req.body)
         res.status(200).json({
             message: 'New location added to nVentory',
             data: newLocation
@@ -42,9 +42,9 @@ locations.post('/', async (req, res) => {
 })
 
 // UPDATE LOCATION
-locations.put('/:id', async (req, res) => {
+location.put('/:id', async (req, res) => {
     try {
-        const updateLocation = await location.update(req.body, {
+        const updateLocation = await locations.update(req.body, {
             where: {
                 location_id: req.params.id
             }
@@ -58,9 +58,9 @@ locations.put('/:id', async (req, res) => {
 })
 
 // DELETE LOCATION
-locations.delete('/:id', async (req, res) => {
+location.delete('/:id', async (req, res) => {
     try {
-        const deleteLocation = await location.destroy({
+        const deleteLocation = await locations.destroy({
             where: {
                 location_id: req.params.id
             }
@@ -73,4 +73,5 @@ locations.delete('/:id', async (req, res) => {
     }
 })
 
-module.exports = locations;
+
+module.exports = location;
