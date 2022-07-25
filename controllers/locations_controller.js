@@ -1,11 +1,11 @@
 //DEPENDENCIES
-const locations = require('express').Router()
+const location = require('express').Router()
 const db = require('../models')
 const {  Locations } = db 
 const { Op } = require('sequelize')
 
-// LIST ALL LOCATION
-locations.get('/', async (req, res) => {
+// LIST ALL LOCATIONS
+location.get('/', async (req, res) => {
     try {
         const foundLocation = await Locations.findAll()
         console.log(foundLocation)
@@ -15,8 +15,8 @@ locations.get('/', async (req, res) => {
     }
 })
 
-// FIND A LOCATION
-locations.get('/:id', async (req, res) => {
+//FIND ALL LOCATIONS
+location.get('/:id', async (req, res) => {
     try {
         const foundLocation = await Locations.findOne({
             where: { location_id: req.params.id },
@@ -29,7 +29,7 @@ locations.get('/:id', async (req, res) => {
 })
 
 // CREATE LOCATION
-locations.post('/', async (req, res) => {
+location.post('/', async (req, res) => {
     try {
         const newLocation = await Locations.create(req.body)
         res.status(200).json({
@@ -42,7 +42,7 @@ locations.post('/', async (req, res) => {
 })
 
 // UPDATE LOCATION
-locations.put('/:id', async (req, res) => {
+location.put('/:id', async (req, res) => {
     try {
         const updateLocation = await Locations.update(req.body, {
             where: {
@@ -58,7 +58,7 @@ locations.put('/:id', async (req, res) => {
 })
 
 // DELETE LOCATION
-locations.delete('/:id', async (req, res) => {
+location.delete('/:id', async (req, res) => {
     try {
         const deleteLocation = await Locations.destroy({
             where: {
@@ -73,4 +73,5 @@ locations.delete('/:id', async (req, res) => {
     }
 })
 
-module.exports = locations;
+
+module.exports = location;
