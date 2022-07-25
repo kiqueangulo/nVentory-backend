@@ -43,36 +43,36 @@ products.post('/', async (req, res) => {
     }
 })
 
-// //UPDATE PRODUCT
-// products.put('/:id', async (req, res) => {
-//    try {
-//     const updateProducts = await ProductDetails.update(req.body, {
-//         where: {
-//             product_id: req.params.id
-//         }
-//     })
-//     res.status(200).json({
-//         message: `Updated ${updateProducts} within nVentory`
-//     })
-//    } catch (error) {
-//     res.status(500).json(err)
-//    }
-// })
+//UPDATE PRODUCT
+products.put('/:id', async (req, res) => {
+   try {
+    const updateProducts = await ProductDetails.update(req.body, {
+        where: {
+            product_id: req.params.id
+        }
+    })
+    res.status(200).json({
+        message: `Updated ${updateProducts} within nVentory`
+    })
+   } catch (error) {
+    res.status(500).json(err)
+   }
+})
 
 // //DELETE PRODUCTS
-// products.delete('/:id', async (req, res) => {
-//     try {
-//         const deleteProducts = await ProductDetails.destroy({
-//             where: {
-//                 product_id: req.params.id
-//             }
-//         })
-//         res.status(200).json({
-//             message: `Deleted ${deleteProducts} within nVentory`
-//         })
-//     } catch (error) {
-//         res.status(500).json(err)
-//     }
-// })
+products.delete('/:id', async (req, res) => {
+    try {
+        const deleteProducts = await ProductDetails.destroy({
+            where: {
+                product_id: req.params.id
+            }
+        })
+        res.status(200).json({
+            message: `Deleted ${deleteProducts} within nVentory`
+        })
+    } catch (error) {
+        res.status(500).json(err)
+    }
+})
 
 module.exports = products;
