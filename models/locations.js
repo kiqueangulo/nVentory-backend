@@ -11,6 +11,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Locations.belongsTo(ProductDetails,{
+        foreignKey: "product_id",
+        as: "product"
+      })
     }
   }
   Locations.init({
@@ -18,6 +22,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
+      allowNull: false
+    },
+    product_id: {
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     sections: {
