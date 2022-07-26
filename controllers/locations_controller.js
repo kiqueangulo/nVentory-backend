@@ -3,13 +3,17 @@ const location = require('express').Router()
 const db = require('../models')
 const {  Locations, ProductDetails } = db 
 const { Op } = require('sequelize')
-// const locations = require('../models/locations')
-// const product_details = require('../models/product_details')
 
 // LIST ALL LOCATIONS
 location.get('/', async (req, res) => {
     try {
-        const foundLocation = await Locations.findAll()  
+        const foundLocation = await Locations.findAll({
+            include: {
+                model: ProductDetails,
+                as: "products",
+                attributes: { exclude: ["product_id", "location_id","brand", "price"]},
+            }
+        })  
         console.log(foundLocation)
         res.status(200).json(foundLocation)
     } catch (error) {
@@ -17,17 +21,17 @@ location.get('/', async (req, res) => {
     }
 })
 
-//FIND ALL LOCATIONS
+//FIND ONE LOCATIONS
 location.get('/:id', async (req, res) => {
     try {
         const foundLocation = await Locations.findOne({
             where: { location_id: req.params.id },
             include: {
                 model: ProductDetails,
-                as: "products"
+                as: "products",
+                attributes: { exclude: ["product_id", "location_id","brand", "price"]},
             }
         })
-
         res.status(200).json(foundLocation)
     } catch (error) {
         res.status(500).json(error)
