@@ -1,8 +1,10 @@
 //DEPENDENCIES
 const location = require('express').Router()
 const db = require('../models')
-const {  Locations } = db 
+const {  Locations, ProductDetails } = db 
 const { Op } = require('sequelize')
+// const locations = require('../models/locations')
+// const product_details = require('../models/product_details')
 
 // LIST ALL LOCATIONS
 location.get('/', async (req, res) => {
@@ -20,6 +22,10 @@ location.get('/:id', async (req, res) => {
     try {
         const foundLocation = await Locations.findOne({
             where: { location_id: req.params.id },
+            include: {
+                model: ProductDetails,
+                as: "products"
+            }
         })
 
         res.status(200).json(foundLocation)

@@ -2,609 +2,610 @@
 
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.bulkInsert('ProductDetails', [
+    await queryInterface.bulkInsert('productdetails', [
       // Dairy
       //Cheese
       {
+        location_id: 1,
         name: 'American Cheese Singles',
         brand: 'Kraft',
         quantity: 34,
         price: 4.98
       },
-      {
-        name: 'Velveeta Original',
-        brand: 'Velveeta',
-        quantity: 48,
-        price: 5.48
-      },
-      {
-        name: 'String Cheese',
-        brand: 'Frigo',
-        quantity: 66,
-        price: 5.98
-      },
-      {
-        name: 'Fiesta Blend Shredded Cheese',
-        brand: 'Great Value',
-        quantity: 32,
-        price: 2.22
-      },
-      {
-        name: 'Parmesan Cheese Grated',
-        brand: 'Kraft',
-        quantity: 20,
-        price: 4.14
-      },
-      //MILK
-      {
-        name: 'Whole Milk',
-        brand: 'Great Value',
-        quantity: 38,
-        price: 3.32
-      },
-      {
-        name: '2% Milk',
-        brand: 'Great Value',
-        quantity: 58,
-        price: 3.32
-      },
-      {
-        name: 'Chocolate Milk half gallon',
-        brand: 'Great Value',
-        quantity: 12,
-        price: 1.97
-      },
-      {
-        name: 'Whole Milk',
-        brand: 'Umpqua',
-        quantity: 3,
-        price: 6.12
-      },
-      {
-        name: 'Almond Milk',
-        brand: 'Great Value',
-        quantity: 12,
-        price: 2.36
-      },
-      //Yogurt
-      {
-        name: 'Vanilla Greek Yogurt',
-        brand: 'Chobani',
-        quantity: 58,
-        price: 1.06
-      },
-      {
-        name: 'Yoplait Original',
-        brand: 'Yoplait',
-        quantity: 67,
-        price: .52
-      },
-      {
-        name: 'Strawberry Go-Gurt',
-        brand: 'Yoplait',
-        quantity: 32,
-        price: 4.97
-      },
-      {
-        name: 'Vanilla',
-        brand: 'Great Value',
-        quantity: 11,
-        price: 2.36
-      },
-      {
-        name: 'Blueberry Greek',
-        brand: 'Ratio',
-        quantity: 1.47,
-        price: 27
-      },
-      //Butter
-      {
-        name: 'Salted Butter',
-        brand: 'Land O Lakes',
-        quantity: 34,
-        price: 5.48
-      },
-      {
-        name: 'Family Size Original Butter',
-        brand: 'Country Crock',
-        quantity: 14,
-        price: 7.23
-      },
-      {
-        name: 'Light Spread',
-        brand: 'I Can\'t Believe It\'s Not Butter!',
-        quantity: 18,
-        price: 3.98
-      },
-      {
-        name: 'Vegetable Oil Sticks',
-        brand: 'Blue Bonnet',
-        quantity: 19,
-        price: 1.63
-      },
-      {
-        name: 'Unsalted Butter',
-        brand: 'Land O Lakes',
-        quantity: 17,
-        price: 5.48
-      },
-      {
-        name: 'Olive Oil & Sea Salt',
-        brand: 'Great Value',
-        quantity: 29,
-        price: 3.98
-      },
-      //Sour Cream
-      {
-        name: 'Sour Cream',
-        brand: 'Daisy',
-        quantity: 28,
-        price: 2.38
-      },
-      {
-        name: 'Light Sour Cream',
-        brand: 'Daisy',
-        quantity: 23,
-        price: 2.38
-      },
-      {
-        name: 'Sour Cream',
-        brand: 'Great Value',
-        quantity: 18,
-        price: 1.98
-      },
-      {
-        name: 'Light Sour Cream',
-        brand: 'Great Value',
-        quantity: 23,
-        price: 1.98
-      },
-      //Creamers
-      {
-        name: 'Half & Half',
-        brand: 'Great Value',
-        quantity: 18,
-        price: 2.33
-      },
-      {
-        name: 'Half & Half',
-        brand: 'Land O Lakes',
-        quantity: 1,
-        price: 3.23
-      },
-      {
-        name: 'Heavy Whipping Cream',
-        brand: 'Great Value',
-        quantity: 25,
-        price: 2.58
-      },
-      {
-        name: 'Hazelnut Creamer',
-        brand: 'Coffee Mate',
-        quantity: 18,
-        price: 6.48
-      },
-      {
-        name: 'French Vanilla Creamer',
-        brand: 'Coffee Mate',
-        quantity: 28,
-        price: 6.48
-      },
-      {
-        name: 'Caramel Machiato Creamer',
-        brand: 'International Delight',
-        quantity: 8,
-        price: 3.52
-      },
-      {
-        name: 'Natural Bliss Sweet Cream',
-        brand: 'Coffee Mate',
-        quantity: 2,
-        price: 5.48
-      },
-      {
-        name: 'White Chocolate Creamer',
-        brand: 'Starbucks',
-        quantity: 6,
-        price: 5.68
-      },
-      {
-        name: 'Vanilla Almond Creamer',
-        brand: 'Silk',
-        quantity: 5,
-        price: 4.58
-      },
-      {
-        name: 'Extra Extra Creamer',
-        brand: 'Dunkin',
-        quantity: 13,
-        price: 3.58
-      },
-      // FROZEN
-      {
-        name: 'Pepperoni Pizza',
-        brand: 'Great Value',
-        quantity: 24,
-        price: 3.88
-      },
-      {
-        name: 'Pepperoni Pizza',
-        brand: 'Red Baron',
-        quantity: 10,
-        price: 4.48
-      },
-      {
-        name: 'Cheese Pizza',
-        brand: 'Great Value',
-        quantity: 21,
-        price: 3.88
-      },
-      {
-        name: 'Cheese Pizza',
-        brand: 'Red Baron',
-        quantity: 18,
-        price: 4.48
-      },
-      {
-        name: 'Rising Crust Pepperoni',
-        brand: 'DiGiorno',
-        quantity: 32,
-        price: 6.92
-      },
-      {
-        name: 'Rising Crust Pepperoni',
-        brand: 'Great Value',
-        quantity: 18,
-        price: 3.98
-      },
-      {
-        name: 'BBQ Chicken Pizza',
-        brand: 'California Pizza Kitchen',
-        quantity: 12,
-        price: 7.48
-      },
-      //Chicken
-      {
-        name: 'Chicken Breast Strips',
-        brand: 'Tyson',
-        quantity: 18,
-        price: 9.98
-      },
-      {
-        name: 'Crispy Chicken Strips',
-        brand: 'Tyson',
-        quantity: 8,
-        price: 9.98
-      },
-      {
-        name: 'Pulled Chicken Breast',
-        brand: 'Tyson',
-        quantity: 9,
-        price: 9.98
-      },
-      {
-        name: 'Boneless Skinless Chicken Breasts',
-        brand: 'Great Value',
-        quantity: 13,
-        price: 9.97
-      },
-      //Breakfast
-      {
-        name: 'Pancakes & Sausage',
-        brand: 'JimmyDean',
-        quantity: 33,
-        price: 9.64
-      },
-      {
-        name: 'Breakfast Croissant',
-        brand: 'JimmyDean',
-        quantity: 8,
-        price: 10.98
-      },
-      {
-        name: 'Strawberry Toaster Strudel',
-        brand: 'Pilsbury',
-        quantity: 23,
-        price: 2.32
-      },
-      {
-        name: 'Original Waffles',
-        brand: 'Eggo',
-        quantity: 65,
-        price: 5.62
-      },
-      {
-        name: 'Blueberry Waffles',
-        brand: 'Eggo',
-        quantity: 37,
-        price: 5.62
-      },
-      {
-        name: 'Buttermilk Waffles',
-        brand: 'Eggos',
-        quantity: 2,
-        price: 5.62
-      },
-      {
-        name: 'Biscuit & Sausage Gravy',
-        brand: 'JimmyDean',
-        quantity: 18,
-        price: 2.82
-      },
-      //Ice Cream
-      {
-        name: 'Moose Tracks',
-        brand: 'Great Value',
-        quantity: 23,
-        price: 2.24
-      },
-      {
-        name: 'Cookie Dough',
-        brand: 'Great Value',
-        quantity: 18,
-        price: 2.24
-      },
-      {
-        name: 'Chocolate',
-        brand: 'Blue Bell',
-        quantity: 6,
-        price: 7.98
-      },
-      {
-        name: 'Vanilla',
-        brand: 'Great Value',
-        quantity: 23,
-        price: 2.24
-      },
-      {
-        name: 'Stawberry',
-        brand: 'Blue Bell',
-        quantity: 8,
-        price: 7.98
-      },
-      {
-        name: 'Neopolitan',
-        brand: 'BLue Bunny',
-        quantity: 13,
-        price: 4.48
-      },
-      {
-        name: 'Twix Ice Cream',
-        brand: 'Twix',
-        quantity: 18,
-        price: 3.88
-      },
-      {
-        name: 'Mint Chocolate Chip',
-        brand: 'Breyers',
-        quantity: 23,
-        price: 3.98
-      },
-      //Breakfast
-      //Coffee
-      {
-        name: 'Medium Roast Coffee',
-        brand: 'Maxwell House',
-        quantity: 18,
-        price: 9.92
-      },
-      {
-        name: 'Classic Roast Coffee',
-        brand: 'Folgers',
-        quantity: 24,
-        price: 10.24
-      },
-      {
-        name: 'Classic Roast Coffee',
-        brand: 'Great Value',
-        quantity: 20,
-        price: 7.98
-      },
-      {
-        name: 'Original Blend',
-        brand: 'Dunkin',
-        quantity: 28,
-        price: 8.72
-      },
-      {
-        name: 'Expresso Coffee',
-        brand: 'Café Bustelo',
-        quantity: 33,
-        price: 3.76
-      },
-      {
-        name: 'American Classic Coffee',
-        brand: 'Community',
-        quantity: 12,
-        price: 12.94
-      },
-      //Tea
-      {
-        name: 'Black Tea',
-        brand: 'Lipton',
-        quantity: 34,
-        price: 3.98
-      },
-      {
-        name: 'Green Tea',
-        brand: 'Tazo',
-        quantity: 21,
-        price: 3.28
-      },
-      {
-        name: 'Chamomile',
-        brand: 'Tazo',
-        quantity: 33,
-        price: 3.28
-      },
-      {
-        name: 'Green Tea',
-        brand: 'Bigelow',
-        quantity: 18,
-        price: 2.98
-      },
-      {
-        name: 'Pepperminte Tea',
-        brand: 'Bieglow',
-        quantity: 20,
-        price: 2.98
-      },
-      //Cereal
-      {
-        name: 'Reese\'s Puffs',
-        brand: 'General Mills',
-        quantity: 18,
-        price: 4.78
-      },
-      {
-        name: 'Cap\'n Crunch',
-        brand: 'Cap\'n Crunch',
-        quantity: 47,
-        price: 4.78
-      },
-      {
-        name: 'Cheerios',
-        brand: 'General Mills',
-        quantity: 12,
-        price: 5.98
-      },
-      {
-        name: 'Cinnamon Toast Crunch',
-        brand: 'General Mills',
-        quantity: 18,
-        price: 4.88
-      },
-      //Bars
-      {
-        name: 'Brown Sugar Cinnamon Pop-Tarts',
-        brand: 'Pop-Tarts',
-        quantity: 18,
-        price: 4.14
-      },
-      {
-        name: 'Stawberry Pop-Tarts',
-        brand: 'Pop-Tarts',
-        quantity: 23,
-        price: 4.14
-      },
-      {
-        name: 'Blueberry Pop-Tarts',
-        brand: 'Pop-Tarts',
-        quantity: 12,
-        price: 4.14
-      },
-      {
-        name: 'Chocolate Brownie ZBar',
-        brand: 'Cliff Kid',
-        quantity: 18,
-        price: 12.47
-      },
-      {
-        name: 'Almond Bars',
-        brand: 'Nature Valley',
-        quantity: 65,
-        price: 6.62
-      },
-      {
-        name: 'Apple Cinnamon',
-        brand: 'Nutri Grain',
-        quantity: 59,
-        price: 5.16
-      },
-      {
-        name: 'Chocolate Chip',
-        brand: 'Chewy',
-        quantity: 28,
-        price: 8.27
-      },
-      {
-        name: 'Fruit and Grain',
-        brand: 'Great Value',
-        quantity: 82,
-        price: 3.28
-      },
-      {
-        name: 'Iced Oatmeal Cookie Bar',
-        brand: 'Cliff Kid',
-        quantity: 29,
-        price: 12.47
-      },
-      //Juice
-      {
-        name: 'Cranberry',
-        brand: 'OceanSpray',
-        quantity: 19,
-        price: 4.98
-      },
-      {
-        name: 'Tangy Original Orange Juice',
-        brand: 'SunnyD',
-        quantity: 23,
-        price: 2.98
-      },
-      {
-        name: 'Fruit Punch',
-        brand: 'CapriSun',
-        quantity: 10,
-        price: 2.98
-      },
-      {
-        name: 'Pulp Free Orange Juice',
-        brand: 'Simply Orange',
-        quantity: 89,
-        price: 6.48
-      },
-      {
-        name: 'Berry Punch',
-        brand: 'Minute Maid',
-        quantity: 59,
-        price: 1.68
-      },
-      //Snacks
-      //Chips
-      {
-        name: 'Nacho Cheese',
-        brand: 'Doritos',
-        quantity: 90,
-        price: 4.98
-      },
-      {
-        name: 'Cool Ranch',
-        brand: 'Doritos',
-        quantity: 57,
-        price: 4.98
-      },
-      {
-        name: 'Hint of Lime Tortilla',
-        brand: 'Tostitos',
-        quantity: 39,
-        price: 3.98
-      },
-      {
-        name: 'Original Tortilla',
-        brand: 'Tostitos',
-        quantity: 17,
-        price: 4.98
-      },
-      {
-        name: 'Sour Cream & Onion',
-        brand: 'Pringles',
-        quantity: 90,
-        price: 6.34
-      },
-      {
-        name: 'Sour Cream & Onion',
-        brand: 'Lays',
-        quantity: 78,
-        price: 4.78
-      },
-      {
-        name: 'Barbecue',
-        brand: 'Lays',
-        quantity: 99,
-        price: 4.78
-      },
-      //Crackers
+      // {
+      //   name: 'Velveeta Original',
+      //   brand: 'Velveeta',
+      //   quantity: 48,
+      //   price: 5.48
+      // },
+      // {
+      //   name: 'String Cheese',
+      //   brand: 'Frigo',
+      //   quantity: 66,
+      //   price: 5.98
+      // },
+      // {
+      //   name: 'Fiesta Blend Shredded Cheese',
+      //   brand: 'Great Value',
+      //   quantity: 32,
+      //   price: 2.22
+      // },
+      // {
+      //   name: 'Parmesan Cheese Grated',
+      //   brand: 'Kraft',
+      //   quantity: 20,
+      //   price: 4.14
+      // },
+      // //MILK
+      // {
+      //   name: 'Whole Milk',
+      //   brand: 'Great Value',
+      //   quantity: 38,
+      //   price: 3.32
+      // },
+      // {
+      //   name: '2% Milk',
+      //   brand: 'Great Value',
+      //   quantity: 58,
+      //   price: 3.32
+      // },
+      // {
+      //   name: 'Chocolate Milk half gallon',
+      //   brand: 'Great Value',
+      //   quantity: 12,
+      //   price: 1.97
+      // },
+      // {
+      //   name: 'Whole Milk',
+      //   brand: 'Umpqua',
+      //   quantity: 3,
+      //   price: 6.12
+      // },
+      // {
+      //   name: 'Almond Milk',
+      //   brand: 'Great Value',
+      //   quantity: 12,
+      //   price: 2.36
+      // },
+      // //Yogurt
+      // {
+      //   name: 'Vanilla Greek Yogurt',
+      //   brand: 'Chobani',
+      //   quantity: 58,
+      //   price: 1.06
+      // },
+      // {
+      //   name: 'Yoplait Original',
+      //   brand: 'Yoplait',
+      //   quantity: 67,
+      //   price: .52
+      // },
+      // {
+      //   name: 'Strawberry Go-Gurt',
+      //   brand: 'Yoplait',
+      //   quantity: 32,
+      //   price: 4.97
+      // },
+      // {
+      //   name: 'Vanilla',
+      //   brand: 'Great Value',
+      //   quantity: 11,
+      //   price: 2.36
+      // },
+      // {
+      //   name: 'Blueberry Greek',
+      //   brand: 'Ratio',
+      //   quantity: 1.47,
+      //   price: 27
+      // },
+      // //Butter
+      // {
+      //   name: 'Salted Butter',
+      //   brand: 'Land O Lakes',
+      //   quantity: 34,
+      //   price: 5.48
+      // },
+      // {
+      //   name: 'Family Size Original Butter',
+      //   brand: 'Country Crock',
+      //   quantity: 14,
+      //   price: 7.23
+      // },
+      // {
+      //   name: 'Light Spread',
+      //   brand: 'I Can\'t Believe It\'s Not Butter!',
+      //   quantity: 18,
+      //   price: 3.98
+      // },
+      // {
+      //   name: 'Vegetable Oil Sticks',
+      //   brand: 'Blue Bonnet',
+      //   quantity: 19,
+      //   price: 1.63
+      // },
+      // {
+      //   name: 'Unsalted Butter',
+      //   brand: 'Land O Lakes',
+      //   quantity: 17,
+      //   price: 5.48
+      // },
+      // {
+      //   name: 'Olive Oil & Sea Salt',
+      //   brand: 'Great Value',
+      //   quantity: 29,
+      //   price: 3.98
+      // },
+      // //Sour Cream
+      // {
+      //   name: 'Sour Cream',
+      //   brand: 'Daisy',
+      //   quantity: 28,
+      //   price: 2.38
+      // },
+      // {
+      //   name: 'Light Sour Cream',
+      //   brand: 'Daisy',
+      //   quantity: 23,
+      //   price: 2.38
+      // },
+      // {
+      //   name: 'Sour Cream',
+      //   brand: 'Great Value',
+      //   quantity: 18,
+      //   price: 1.98
+      // },
+      // {
+      //   name: 'Light Sour Cream',
+      //   brand: 'Great Value',
+      //   quantity: 23,
+      //   price: 1.98
+      // },
+      // //Creamers
+      // {
+      //   name: 'Half & Half',
+      //   brand: 'Great Value',
+      //   quantity: 18,
+      //   price: 2.33
+      // },
+      // {
+      //   name: 'Half & Half',
+      //   brand: 'Land O Lakes',
+      //   quantity: 1,
+      //   price: 3.23
+      // },
+      // {
+      //   name: 'Heavy Whipping Cream',
+      //   brand: 'Great Value',
+      //   quantity: 25,
+      //   price: 2.58
+      // },
+      // {
+      //   name: 'Hazelnut Creamer',
+      //   brand: 'Coffee Mate',
+      //   quantity: 18,
+      //   price: 6.48
+      // },
+      // {
+      //   name: 'French Vanilla Creamer',
+      //   brand: 'Coffee Mate',
+      //   quantity: 28,
+      //   price: 6.48
+      // },
+      // {
+      //   name: 'Caramel Machiato Creamer',
+      //   brand: 'International Delight',
+      //   quantity: 8,
+      //   price: 3.52
+      // },
+      // {
+      //   name: 'Natural Bliss Sweet Cream',
+      //   brand: 'Coffee Mate',
+      //   quantity: 2,
+      //   price: 5.48
+      // },
+      // {
+      //   name: 'White Chocolate Creamer',
+      //   brand: 'Starbucks',
+      //   quantity: 6,
+      //   price: 5.68
+      // },
+      // {
+      //   name: 'Vanilla Almond Creamer',
+      //   brand: 'Silk',
+      //   quantity: 5,
+      //   price: 4.58
+      // },
+      // {
+      //   name: 'Extra Extra Creamer',
+      //   brand: 'Dunkin',
+      //   quantity: 13,
+      //   price: 3.58
+      // },
+      // // FROZEN
+      // {
+      //   name: 'Pepperoni Pizza',
+      //   brand: 'Great Value',
+      //   quantity: 24,
+      //   price: 3.88
+      // },
+      // {
+      //   name: 'Pepperoni Pizza',
+      //   brand: 'Red Baron',
+      //   quantity: 10,
+      //   price: 4.48
+      // },
+      // {
+      //   name: 'Cheese Pizza',
+      //   brand: 'Great Value',
+      //   quantity: 21,
+      //   price: 3.88
+      // },
+      // {
+      //   name: 'Cheese Pizza',
+      //   brand: 'Red Baron',
+      //   quantity: 18,
+      //   price: 4.48
+      // },
+      // {
+      //   name: 'Rising Crust Pepperoni',
+      //   brand: 'DiGiorno',
+      //   quantity: 32,
+      //   price: 6.92
+      // },
+      // {
+      //   name: 'Rising Crust Pepperoni',
+      //   brand: 'Great Value',
+      //   quantity: 18,
+      //   price: 3.98
+      // },
+      // {
+      //   name: 'BBQ Chicken Pizza',
+      //   brand: 'California Pizza Kitchen',
+      //   quantity: 12,
+      //   price: 7.48
+      // },
+      // //Chicken
+      // {
+      //   name: 'Chicken Breast Strips',
+      //   brand: 'Tyson',
+      //   quantity: 18,
+      //   price: 9.98
+      // },
+      // {
+      //   name: 'Crispy Chicken Strips',
+      //   brand: 'Tyson',
+      //   quantity: 8,
+      //   price: 9.98
+      // },
+      // {
+      //   name: 'Pulled Chicken Breast',
+      //   brand: 'Tyson',
+      //   quantity: 9,
+      //   price: 9.98
+      // },
+      // {
+      //   name: 'Boneless Skinless Chicken Breasts',
+      //   brand: 'Great Value',
+      //   quantity: 13,
+      //   price: 9.97
+      // },
+      // //Breakfast
+      // {
+      //   name: 'Pancakes & Sausage',
+      //   brand: 'JimmyDean',
+      //   quantity: 33,
+      //   price: 9.64
+      // },
+      // {
+      //   name: 'Breakfast Croissant',
+      //   brand: 'JimmyDean',
+      //   quantity: 8,
+      //   price: 10.98
+      // },
+      // {
+      //   name: 'Strawberry Toaster Strudel',
+      //   brand: 'Pilsbury',
+      //   quantity: 23,
+      //   price: 2.32
+      // },
+      // {
+      //   name: 'Original Waffles',
+      //   brand: 'Eggo',
+      //   quantity: 65,
+      //   price: 5.62
+      // },
+      // {
+      //   name: 'Blueberry Waffles',
+      //   brand: 'Eggo',
+      //   quantity: 37,
+      //   price: 5.62
+      // },
+      // {
+      //   name: 'Buttermilk Waffles',
+      //   brand: 'Eggos',
+      //   quantity: 2,
+      //   price: 5.62
+      // },
+      // {
+      //   name: 'Biscuit & Sausage Gravy',
+      //   brand: 'JimmyDean',
+      //   quantity: 18,
+      //   price: 2.82
+      // },
+      // //Ice Cream
+      // {
+      //   name: 'Moose Tracks',
+      //   brand: 'Great Value',
+      //   quantity: 23,
+      //   price: 2.24
+      // },
+      // {
+      //   name: 'Cookie Dough',
+      //   brand: 'Great Value',
+      //   quantity: 18,
+      //   price: 2.24
+      // },
+      // {
+      //   name: 'Chocolate',
+      //   brand: 'Blue Bell',
+      //   quantity: 6,
+      //   price: 7.98
+      // },
+      // {
+      //   name: 'Vanilla',
+      //   brand: 'Great Value',
+      //   quantity: 23,
+      //   price: 2.24
+      // },
+      // {
+      //   name: 'Stawberry',
+      //   brand: 'Blue Bell',
+      //   quantity: 8,
+      //   price: 7.98
+      // },
+      // {
+      //   name: 'Neopolitan',
+      //   brand: 'BLue Bunny',
+      //   quantity: 13,
+      //   price: 4.48
+      // },
+      // {
+      //   name: 'Twix Ice Cream',
+      //   brand: 'Twix',
+      //   quantity: 18,
+      //   price: 3.88
+      // },
+      // {
+      //   name: 'Mint Chocolate Chip',
+      //   brand: 'Breyers',
+      //   quantity: 23,
+      //   price: 3.98
+      // },
+      // //Breakfast
+      // //Coffee
+      // {
+      //   name: 'Medium Roast Coffee',
+      //   brand: 'Maxwell House',
+      //   quantity: 18,
+      //   price: 9.92
+      // },
+      // {
+      //   name: 'Classic Roast Coffee',
+      //   brand: 'Folgers',
+      //   quantity: 24,
+      //   price: 10.24
+      // },
+      // {
+      //   name: 'Classic Roast Coffee',
+      //   brand: 'Great Value',
+      //   quantity: 20,
+      //   price: 7.98
+      // },
+      // {
+      //   name: 'Original Blend',
+      //   brand: 'Dunkin',
+      //   quantity: 28,
+      //   price: 8.72
+      // },
+      // {
+      //   name: 'Expresso Coffee',
+      //   brand: 'Café Bustelo',
+      //   quantity: 33,
+      //   price: 3.76
+      // },
+      // {
+      //   name: 'American Classic Coffee',
+      //   brand: 'Community',
+      //   quantity: 12,
+      //   price: 12.94
+      // },
+      // //Tea
+      // {
+      //   name: 'Black Tea',
+      //   brand: 'Lipton',
+      //   quantity: 34,
+      //   price: 3.98
+      // },
+      // {
+      //   name: 'Green Tea',
+      //   brand: 'Tazo',
+      //   quantity: 21,
+      //   price: 3.28
+      // },
+      // {
+      //   name: 'Chamomile',
+      //   brand: 'Tazo',
+      //   quantity: 33,
+      //   price: 3.28
+      // },
+      // {
+      //   name: 'Green Tea',
+      //   brand: 'Bigelow',
+      //   quantity: 18,
+      //   price: 2.98
+      // },
+      // {
+      //   name: 'Pepperminte Tea',
+      //   brand: 'Bieglow',
+      //   quantity: 20,
+      //   price: 2.98
+      // },
+      // //Cereal
+      // {
+      //   name: 'Reese\'s Puffs',
+      //   brand: 'General Mills',
+      //   quantity: 18,
+      //   price: 4.78
+      // },
+      // {
+      //   name: 'Cap\'n Crunch',
+      //   brand: 'Cap\'n Crunch',
+      //   quantity: 47,
+      //   price: 4.78
+      // },
+      // {
+      //   name: 'Cheerios',
+      //   brand: 'General Mills',
+      //   quantity: 12,
+      //   price: 5.98
+      // },
+      // {
+      //   name: 'Cinnamon Toast Crunch',
+      //   brand: 'General Mills',
+      //   quantity: 18,
+      //   price: 4.88
+      // },
+      // //Bars
+      // {
+      //   name: 'Brown Sugar Cinnamon Pop-Tarts',
+      //   brand: 'Pop-Tarts',
+      //   quantity: 18,
+      //   price: 4.14
+      // },
+      // {
+      //   name: 'Stawberry Pop-Tarts',
+      //   brand: 'Pop-Tarts',
+      //   quantity: 23,
+      //   price: 4.14
+      // },
+      // {
+      //   name: 'Blueberry Pop-Tarts',
+      //   brand: 'Pop-Tarts',
+      //   quantity: 12,
+      //   price: 4.14
+      // },
+      // {
+      //   name: 'Chocolate Brownie ZBar',
+      //   brand: 'Cliff Kid',
+      //   quantity: 18,
+      //   price: 12.47
+      // },
+      // {
+      //   name: 'Almond Bars',
+      //   brand: 'Nature Valley',
+      //   quantity: 65,
+      //   price: 6.62
+      // },
+      // {
+      //   name: 'Apple Cinnamon',
+      //   brand: 'Nutri Grain',
+      //   quantity: 59,
+      //   price: 5.16
+      // },
+      // {
+      //   name: 'Chocolate Chip',
+      //   brand: 'Chewy',
+      //   quantity: 28,
+      //   price: 8.27
+      // },
+      // {
+      //   name: 'Fruit and Grain',
+      //   brand: 'Great Value',
+      //   quantity: 82,
+      //   price: 3.28
+      // },
+      // {
+      //   name: 'Iced Oatmeal Cookie Bar',
+      //   brand: 'Cliff Kid',
+      //   quantity: 29,
+      //   price: 12.47
+      // },
+      // //Juice
+      // {
+      //   name: 'Cranberry',
+      //   brand: 'OceanSpray',
+      //   quantity: 19,
+      //   price: 4.98
+      // },
+      // {
+      //   name: 'Tangy Original Orange Juice',
+      //   brand: 'SunnyD',
+      //   quantity: 23,
+      //   price: 2.98
+      // },
+      // {
+      //   name: 'Fruit Punch',
+      //   brand: 'CapriSun',
+      //   quantity: 10,
+      //   price: 2.98
+      // },
+      // {
+      //   name: 'Pulp Free Orange Juice',
+      //   brand: 'Simply Orange',
+      //   quantity: 89,
+      //   price: 6.48
+      // },
+      // {
+      //   name: 'Berry Punch',
+      //   brand: 'Minute Maid',
+      //   quantity: 59,
+      //   price: 1.68
+      // },
+      // //Snacks
+      // //Chips
+      // {
+      //   name: 'Nacho Cheese',
+      //   brand: 'Doritos',
+      //   quantity: 90,
+      //   price: 4.98
+      // },
+      // {
+      //   name: 'Cool Ranch',
+      //   brand: 'Doritos',
+      //   quantity: 57,
+      //   price: 4.98
+      // },
+      // {
+      //   name: 'Hint of Lime Tortilla',
+      //   brand: 'Tostitos',
+      //   quantity: 39,
+      //   price: 3.98
+      // },
+      // {
+      //   name: 'Original Tortilla',
+      //   brand: 'Tostitos',
+      //   quantity: 17,
+      //   price: 4.98
+      // },
+      // {
+      //   name: 'Sour Cream & Onion',
+      //   brand: 'Pringles',
+      //   quantity: 90,
+      //   price: 6.34
+      // },
+      // {
+      //   name: 'Sour Cream & Onion',
+      //   brand: 'Lays',
+      //   quantity: 78,
+      //   price: 4.78
+      // },
+      // {
+      //   name: 'Barbecue',
+      //   brand: 'Lays',
+      //   quantity: 99,
+      //   price: 4.78
+      // },
+      // //Crackers
       // {
       //   name: 'Original Crackers',
       //   brand: 'Ritz',
@@ -1238,6 +1239,6 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-   await queryInterface.bulkDelete('ProductDetails', null, {})
+   await queryInterface.bulkDelete('productdetails', null, {})
   }
 };
