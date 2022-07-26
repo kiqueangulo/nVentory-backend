@@ -9,7 +9,13 @@ const { Op } = require('sequelize')
 // LIST ALL LOCATIONS
 location.get('/', async (req, res) => {
     try {
-        const foundLocation = await Locations.findAll()  
+        const foundLocation = await Locations.findAll({
+            include: {
+                model: ProductDetails,
+                as: "products",
+                attributes: { exclude: ["product_id", "location_id","brand", "quantity", "price"]},
+            }
+        })  
         console.log(foundLocation)
         res.status(200).json(foundLocation)
     } catch (error) {

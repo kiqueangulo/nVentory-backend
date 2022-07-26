@@ -25,8 +25,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
     product_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false
+      type: DataTypes.INTEGER
     },
     sections: {
       type: DataTypes.STRING,
