@@ -11,8 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate({ Locations }) {
       // define association here
-      ProductDetails.hasOne(Locations, {
-        foreignKey: "product_id",
+      ProductDetails.belongsTo(Locations, {
+        foreignKey: "location_id",
         as: "locations"
       })
     }
@@ -23,6 +23,9 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       autoIncrement: true,
       allowNull: false
+    },
+    location_id:{
+      type: DataTypes.INTEGER,
     },
     name: {
     type: DataTypes.STRING,
@@ -43,7 +46,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'ProductDetails',
-    tableName: 'ProductDetails',
+    tableName: 'productdetails',
     timestamps: false
   });
   return ProductDetails;
