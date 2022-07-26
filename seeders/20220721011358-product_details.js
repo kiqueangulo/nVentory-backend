@@ -605,634 +605,634 @@ module.exports = {
         price: 4.78
       },
       //Crackers
-      {
-        name: 'Original Crackers',
-        brand: 'Ritz',
-        quantity: 18,
-        price: 5.66
-      },
-      {
-        name: 'Sour Cream and Onion',
-        brand: 'Ritz',
-        quantity: 88,
-        price: 3.00
-      },
-      {
-        name: 'Saltine Crackers',
-        brand: 'Nabasco',
-        quantity: 32,
-        price: 3.28
-      },
-      {
-        name: 'Original Crackers',
-        brand: 'Town House',
-        quantity: 78,
-        price: 3.88
-      },
-      //Soda
-      {
-        name: 'Pepsi Cola',
-        brand: 'Pepsi',
-        quantity: 92,
-        price: 9.28
-      },
-      {
-        name: 'Citrus Soda',
-        brand: 'Mountain Dew',
-        quantity: 12,
-        price: 9.28
-      },
-      {
-        name: 'Coca Cola',
-        brand: 'Coca Cola',
-        quantity: 12,
-        price: 10.88
-      },
-      {
-        name: 'Sprite',
-        brand: 'Coca Cola',
-        quantity: 39,
-        price: 3.98
-      },
-      {
-        name: 'Root Beer',
-        brand: 'A&W',
-        quantity: 32,
-        price: 5.48
-      },
-      {
-        name: 'Sam\'s Cola',
-        brand: 'Sam\'s',
-        quantity: 24,
-        price: 6.24
-      },
-      //Cookies 
-      {
-        name: 'Original Chocolate Chip',
-        brand: 'Chips Ahoy',
-        quantity: 19,
-        price: 4.28
-      },
-      {
-        name: 'Chocolate Sandwich Cookies',
-        brand: 'Oreo',
-        quantity: 27,
-        price: 4.28
-      },
-      {
-        name: 'Nutty Buddy',
-        brand: 'Little Debbie',
-        quantity: 12,
-        price: 2.58
-      },
-      //Gummies
-      {
-        name: 'Juicy Burst',
-        brand: 'Black Forest',
-        quantity: 32,
-        price: 7.98
-      },
-      {
-        name: 'Mixed Fruit Snacks',
-        brand: 'Welch\'s',
-        quantity: 78,
-        price: 8.48
-      },
-      {
-        name: 'Assorted Fruit Snacks',
-        brand: 'Mott\'s',
-        quantity: 28,
-        price: 7.24
-      },
-      {
-        name: 'Variety Fruit Pack Snacks',
-        brand: 'Mott\'s',
-        quantity: 29,
-        price: 4.97
-      },
-      //Candy
-      {
-        name: 'Sour Patch Kids',
-        brand: 'Sour Patch Kids',
-        quantity: 38,
-        price: 1.24
-      },
-      {
-        name: 'Gummy Clusters',
-        brand: 'Nerds',
-        quantity: 89,
-        price: 3.48
-      },
-      {
-        name: 'Skittles',
-        brand: 'Skittles',
-        quantity: 134,
-        price: 1.98
-      },
-      {
-        name: 'Airheads Mini Bars',
-        brand: 'Airheads',
-        quantity: 100,
-        price: 2.28
-      },
-      {
-        name: 'Reese\'s',
-        brand: 'Reese\'s',
-        quantity: 189,
-        price: 1.48
-      },
-      //Spreads
-      {
-        name: 'Peanut Butter',
-        brand: 'Jif',
-        quantity: 40,
-        price: 6.78
-      },
-      {
-        name: 'Crunch Peanut Butter',
-        brand: 'Jif',
-        quantity: 88,
-        price: 6.78
-      },
-      {
-        name: 'Nutella',
-        brand: 'Nutella',
-        quantity: 49,
-        price: 8.48
-      },
-      {
-        name: 'Creamy Stripes',
-        brand: 'Great Value',
-        quantity: 25,
-        price: 2.24
-      },
-      {
-        name: 'Peanut Butter',
-        brand: 'Great Value',
-        quantity: 78,
-        price: 3.47
-      },
-      {
-        name: 'Grape Jelly',
-        brand: 'Welch\'s',
-        quantity: 29,
-        price: 2.74
-      },
-      {
-        name: 'Stawberry Jelly',
-        brand: 'Welch\'s',
-        quantity: 45,
-        price: 2.74
-      },
-      //Produce
-      //Blue,straw,blackberries
-      {
-        name: 'Strawberries',
-        brand: 'Great Value',
-        quantity: 12,
-        price: 2.32
-      },
-      {
-        name: 'Blueberries',
-        brand: 'Dole',
-        quantity: 33,
-        price: 3.33
-      },
-      {
-        name: 'Blackberries',
-        brand: 'Great Value',
-        quantity: 28,
-        price: 3.58
-      },
-      //Lemon/lime/apples/cherries/Bananas/Oranges
-      {
-        name: 'Lemons',
-        brand: 'Great Value',
-        quantity: 87,
-        price: .58
-      },
-      {
-        name: 'Limes',
-        brand: 'Susie',
-        quantity: 89,
-        price: .65
-      },
-      {
-        name: 'Limes',
-        brand: 'Great Value',
-        quantity: 49,
-        price: .54
-      },
-      {
-        name: 'Granny Smith Apples',
-        brand: 'Great Value',
-        quantity: 35,
-        price: .88
-      },
-      {
-        name: 'Gala Apples',
-        brand: 'Great Value',
-        quantity: 76,
-        price: .87
-      },
-      {
-        name: 'Fuji Apples',
-        brand: 'Great Value',
-        quantity: 99,
-        price: .78
-      },
-      {
-        name: 'Red Cherries',
-        brand: 'Great Value',
-        quantity: 11,
-        price: 11.18
-      },
-      {
-        name: 'Rainier Cherries',
-        brand: 'Dole',
-        quantity: 23,
-        price: 10.46
-      },
-      {
-        name: 'Bananas',
-        brand: 'Great Value',
-        quantity: 28,
-        price: .23
-      },
-      {
-        name: 'Organic Bananas',
-        brand: 'Great Value',
-        quantity: 34,
-        price: .69
-      },
-      {
-        name: 'Organic Oranges',
-        brand: 'Marketside',
-        quantity: 88,
-        price: 6.88
-      },
-      {
-        name: 'Oranges',
-        brand: 'Great Value',
-        quantity: 38,
-        price: 4.98
-      },
-      //Zucchini/Squash/Onion/Peppers
-      {
-        name: 'Zucchini',
-        brand: 'Great Value',
-        quantity: 39,
-        price: .98
-      },
-      {
-        name: 'Squash',
-        brand: 'Great Value',
-        quantity: 23,
-        price: .89
-      },
-      {
-        name: 'Yellow Onion',
-        brand: 'Great Value',
-        quantity: 54,
-        price: .45
-      },
-      {
-        name: 'Red oNion',
-        brand: 'Great Value',
-        quantity: 43,
-        price: .45
-      },
-      {
-        name: 'Red Peppers',
-        brand: 'Great Value',
-        quantity: 23,
-        price: 1.48
-      },
-      {
-        name: '3-Pack Assorted Peppers',
-        brand: 'Great Value',
-        quantity: 12,
-        price: 3.58
-      },
-      //Tomatoes/Asparagus/Broccoli/Lettuce
-      {
-        name: 'Roma Tomatoes',
-        brand: 'Great Value',
-        quantity: 23,
-        price: .26
-      },
-      {
-        name: 'Grape Tomatoes',
-        brand: 'Great Value',
-        quantity: 38,
-        price: 1.48
-      },
-      {
-        name: 'Asparagus',
-        brand: 'Marketside',
-        quantity: 3,
-        price: 4.18
-      },
-      {
-        name: 'Broccoli',
-        brand: 'Great Value',
-        quantity: 33,
-        price: 1.31
-      },
-      {
-        name: 'Broccoli',
-        brand: 'Marketside',
-        quantity: 23,
-        price: 2.78
-      },
-      {
-        name: 'Iceburg Lettuce',
-        brand: 'Green Giant',
-        quantity: 19,
-        price: 1.48
-      },
-      {
-        name: 'Shredded Iceburg Lettuce',
-        brand: 'Marketside',
-        quantity: 12,
-        price: 1.98
-      },
-      {
-        name: 'Romaine Lettuce',
-        brand: 'Great Value',
-        quantity: 21,
-        price: 2.62
-      },
-      //Celery/Carrots/Corn/Green Onions
-      {
-        name: 'Celery',
-        brand: 'Dole',
-        quantity: 12,
-        price: 1.47
-      },
-      {
-        name: 'Carrots',
-        brand: 'Bolthouse',
-        quantity: 19,
-        price: 1.92
-      },
-      {
-        name: 'Corn',
-        brand: 'Great Value',
-        quantity: 22,
-        price: .50
-      },
-      {
-        name: 'Green Onions',
-        brand: 'Great Value',
-        quantity: 83,
-        price: .48
-      },
-      //Cooking
-      //Sauces
-      {
-        name: 'Ketchup',
-        brand: 'Heinz',
-        quantity: 190,
-        price: 1.48
-      },
-      {
-        name: 'Mustard',
-        brand: 'Heinze',
-        quantity: 159,
-        price: 1.76
-      },
-      {
-        name: 'Ranch',
-        brand: 'Hidden Valley',
-        quantity: 83,
-        price: 2.39
-      },
-      {
-        name: 'Mayonaise',
-        brand: 'Duke\'s',
-        quantity: 89,
-        price: 1.98
-      },
-      {
-        name: 'BBQ Sauce',
-        brand: 'Sweet Baby Ray\'s',
-        quantity: 123,
-        price: 1.97
-      },
-      {
-        name: 'Steak Sauce',
-        brand: 'A1',
-        quantity: 198,
-        price: 1.78
-      },
-      //Sugars
-      {
-        name: 'Granulated Sugar',
-        brand: 'Great Value',
-        quantity: 12,
-        price: 2.57
-      },
-      {
-        name: 'Cane Sugar',
-        brand: 'C & H',
-        quantity: 32,
-        price: 3.25
-      },
-      {
-        name: 'Pure Cane Sugar',
-        brand: 'Morena',
-        quantity: 43,
-        price: 3.18
-      },
-      {
-        name: 'Granulated Sugar',
-        brand: 'Domino',
-        quantity: 54,
-        price: 3.34
-      },
-      //Spices
-      {
-        name: 'Garlic Parmesan',
-        brand: 'Weber',
-        quantity: 44,
-        price: 4.42
-      },
-      {
-        name: 'Seasoned Salt',
-        brand: 'Lawrys',
-        quantity: 78,
-        price: 3.68
-      },
-      {
-        name: 'Ground Cinnamon',
-        brand: 'Great Value',
-        quantity: 82,
-        price: 1.18
-      },
-      {
-        name: 'Garlic Powder',
-        brand: 'McCormick',
-        quantity: 87,
-        price: 6.50
-      },
-      {
-        name: 'Paprika',
-        brand: 'Great Value',
-        quantity: 100,
-        price: 1.00
-      },
-      {
-        name: 'Ground Cumin',
-        brand: 'Great Value',
-        quantity: 29,
-        price: 1.28
-      },
-      //Flour
-      {
-        name: 'All-Purpose Flour',
-        brand: 'Great Value',
-        quantity: 12,
-        price: 2.12
-      },
-      {
-        name: 'Cake Flour',
-        brand: 'Swans Down',
-        quantity: 45,
-        price: 3.52
-      },
-      {
-        name: 'All-Purpose flour',
-        brand: 'Gold Medal',
-        quantity: 45,
-        price: 3.64
-      },
-      //Alcohol
-      //Red Wine
-      {
-        name: 'Red Wine Blend',
-        brand: 'Apothic',
-        quantity: 10,
-        price: 11.73
-      },
-      {
-        name: 'Cabernet Sauvignon',
-        brand: 'Robert Mondavi',
-        quantity: 12,
-        price: 8.48
-      },
-      {
-        name: 'Sweet Red Blend',
-        brand: 'Duplin',
-        quantity: 3,
-        price: 7.48
-      },
-      {
-        name: 'Merlot',
-        brand: 'Oak Leaf',
-        quantity: 23,
-        price: 2.96
-      },
-      //White Wine
-      {
-        name: 'Pinot Grigio',
-        brand: 'Oak Leaf',
-        quantity: 24,
-        price: 2.96
-      },
-      {
-        name: 'Pinot Grigio',
-        brand: 'Barefoot',
-        quantity: 12,
-        price: 11.48
-      },
-      {
-        name: 'Chardonnay',
-        brand: 'J. Lohr',
-        quantity: 27,
-        price: 13.48
-      },
-      {
-        name: 'Sauvignon Blanc',
-        brand: 'Cupcake',
-        quantity: 1,
-        price: 7.98
-      },
-      //Domestic Beer
-      {
-        name: 'Light Beer',
-        brand: 'Michelob ULTRA',
-        quantity: 20,
-        price: 20.48
-      },
-      {
-        name: 'Light Beer',
-        brand: 'Bud Light',
-        quantity: 23,
-        price: 18.48
-      },
-      {
-        name: 'Light Beer',
-        brand: 'Miller Lite',
-        quantity: 24,
-        price: 18.48
-      },
-      //Craft Beer
-      {
-        name: 'IPA Craft Beer',
-        brand: 'Elysian',
-        quantity: 12,
-        price: 12.48
-      },
-      {
-        name: '420 Extra Pale Ale',
-        brand: 'Sweetwater',
-        quantity: 24,
-        price: 17.48
-      },
-      {
-        name: 'Summer Shandy',
-        brand: 'Leinenkugel',
-        quantity: 11,
-        price: 9.48
-      },
-      {
-        name: 'IPA Craft Beer',
-        brand: 'Goose Island',
-        quantity: 14,
-        price: 16.98
-      },
-      //Frozen Drinks
-      {
-        name: 'Escapes Variety Pack',
-        brand: 'Seagrams',
-        quantity: 18,
-        price: 14.48
-      },
-      {
-        name: 'Italian Ice',
-        brand: 'Seagrams',
-        quantity: 12,
-        price: 14.48
-      },
-      {
-        name: 'Strawberry Margarita',
-        brand: 'Daily\'s',
-        quantity: 22,
-        price: 1.88
-      },
-      {
-        name: 'Bahama Mama',
-        brand: 'Daily\'s',
-        quantity: 19,
-        price: 1.88
-      },
-      {
-        name: 'Hurricane',
-        brand: 'Daily\'s',
-        quantity: 7,
-        price: 1.88
-      },
+      // {
+      //   name: 'Original Crackers',
+      //   brand: 'Ritz',
+      //   quantity: 18,
+      //   price: 5.66
+      // },
+      // {
+      //   name: 'Sour Cream and Onion',
+      //   brand: 'Ritz',
+      //   quantity: 88,
+      //   price: 3.00
+      // },
+      // {
+      //   name: 'Saltine Crackers',
+      //   brand: 'Nabasco',
+      //   quantity: 32,
+      //   price: 3.28
+      // },
+      // {
+      //   name: 'Original Crackers',
+      //   brand: 'Town House',
+      //   quantity: 78,
+      //   price: 3.88
+      // },
+      // //Soda
+      // {
+      //   name: 'Pepsi Cola',
+      //   brand: 'Pepsi',
+      //   quantity: 92,
+      //   price: 9.28
+      // },
+      // {
+      //   name: 'Citrus Soda',
+      //   brand: 'Mountain Dew',
+      //   quantity: 12,
+      //   price: 9.28
+      // },
+      // {
+      //   name: 'Coca Cola',
+      //   brand: 'Coca Cola',
+      //   quantity: 12,
+      //   price: 10.88
+      // },
+      // {
+      //   name: 'Sprite',
+      //   brand: 'Coca Cola',
+      //   quantity: 39,
+      //   price: 3.98
+      // },
+      // {
+      //   name: 'Root Beer',
+      //   brand: 'A&W',
+      //   quantity: 32,
+      //   price: 5.48
+      // },
+      // {
+      //   name: 'Sam\'s Cola',
+      //   brand: 'Sam\'s',
+      //   quantity: 24,
+      //   price: 6.24
+      // },
+      // //Cookies 
+      // {
+      //   name: 'Original Chocolate Chip',
+      //   brand: 'Chips Ahoy',
+      //   quantity: 19,
+      //   price: 4.28
+      // },
+      // {
+      //   name: 'Chocolate Sandwich Cookies',
+      //   brand: 'Oreo',
+      //   quantity: 27,
+      //   price: 4.28
+      // },
+      // {
+      //   name: 'Nutty Buddy',
+      //   brand: 'Little Debbie',
+      //   quantity: 12,
+      //   price: 2.58
+      // },
+      // //Gummies
+      // {
+      //   name: 'Juicy Burst',
+      //   brand: 'Black Forest',
+      //   quantity: 32,
+      //   price: 7.98
+      // },
+      // {
+      //   name: 'Mixed Fruit Snacks',
+      //   brand: 'Welch\'s',
+      //   quantity: 78,
+      //   price: 8.48
+      // },
+      // {
+      //   name: 'Assorted Fruit Snacks',
+      //   brand: 'Mott\'s',
+      //   quantity: 28,
+      //   price: 7.24
+      // },
+      // {
+      //   name: 'Variety Fruit Pack Snacks',
+      //   brand: 'Mott\'s',
+      //   quantity: 29,
+      //   price: 4.97
+      // },
+      // //Candy
+      // {
+      //   name: 'Sour Patch Kids',
+      //   brand: 'Sour Patch Kids',
+      //   quantity: 38,
+      //   price: 1.24
+      // },
+      // {
+      //   name: 'Gummy Clusters',
+      //   brand: 'Nerds',
+      //   quantity: 89,
+      //   price: 3.48
+      // },
+      // {
+      //   name: 'Skittles',
+      //   brand: 'Skittles',
+      //   quantity: 134,
+      //   price: 1.98
+      // },
+      // {
+      //   name: 'Airheads Mini Bars',
+      //   brand: 'Airheads',
+      //   quantity: 100,
+      //   price: 2.28
+      // },
+      // {
+      //   name: 'Reese\'s',
+      //   brand: 'Reese\'s',
+      //   quantity: 189,
+      //   price: 1.48
+      // },
+      // //Spreads
+      // {
+      //   name: 'Peanut Butter',
+      //   brand: 'Jif',
+      //   quantity: 40,
+      //   price: 6.78
+      // },
+      // {
+      //   name: 'Crunch Peanut Butter',
+      //   brand: 'Jif',
+      //   quantity: 88,
+      //   price: 6.78
+      // },
+      // {
+      //   name: 'Nutella',
+      //   brand: 'Nutella',
+      //   quantity: 49,
+      //   price: 8.48
+      // },
+      // {
+      //   name: 'Creamy Stripes',
+      //   brand: 'Great Value',
+      //   quantity: 25,
+      //   price: 2.24
+      // },
+      // {
+      //   name: 'Peanut Butter',
+      //   brand: 'Great Value',
+      //   quantity: 78,
+      //   price: 3.47
+      // },
+      // {
+      //   name: 'Grape Jelly',
+      //   brand: 'Welch\'s',
+      //   quantity: 29,
+      //   price: 2.74
+      // },
+      // {
+      //   name: 'Stawberry Jelly',
+      //   brand: 'Welch\'s',
+      //   quantity: 45,
+      //   price: 2.74
+      // },
+      // //Produce
+      // //Blue,straw,blackberries
+      // {
+      //   name: 'Strawberries',
+      //   brand: 'Great Value',
+      //   quantity: 12,
+      //   price: 2.32
+      // },
+      // {
+      //   name: 'Blueberries',
+      //   brand: 'Dole',
+      //   quantity: 33,
+      //   price: 3.33
+      // },
+      // {
+      //   name: 'Blackberries',
+      //   brand: 'Great Value',
+      //   quantity: 28,
+      //   price: 3.58
+      // },
+      // //Lemon/lime/apples/cherries/Bananas/Oranges
+      // {
+      //   name: 'Lemons',
+      //   brand: 'Great Value',
+      //   quantity: 87,
+      //   price: .58
+      // },
+      // {
+      //   name: 'Limes',
+      //   brand: 'Susie',
+      //   quantity: 89,
+      //   price: .65
+      // },
+      // {
+      //   name: 'Limes',
+      //   brand: 'Great Value',
+      //   quantity: 49,
+      //   price: .54
+      // },
+      // {
+      //   name: 'Granny Smith Apples',
+      //   brand: 'Great Value',
+      //   quantity: 35,
+      //   price: .88
+      // },
+      // {
+      //   name: 'Gala Apples',
+      //   brand: 'Great Value',
+      //   quantity: 76,
+      //   price: .87
+      // },
+      // {
+      //   name: 'Fuji Apples',
+      //   brand: 'Great Value',
+      //   quantity: 99,
+      //   price: .78
+      // },
+      // {
+      //   name: 'Red Cherries',
+      //   brand: 'Great Value',
+      //   quantity: 11,
+      //   price: 11.18
+      // },
+      // {
+      //   name: 'Rainier Cherries',
+      //   brand: 'Dole',
+      //   quantity: 23,
+      //   price: 10.46
+      // },
+      // {
+      //   name: 'Bananas',
+      //   brand: 'Great Value',
+      //   quantity: 28,
+      //   price: .23
+      // },
+      // {
+      //   name: 'Organic Bananas',
+      //   brand: 'Great Value',
+      //   quantity: 34,
+      //   price: .69
+      // },
+      // {
+      //   name: 'Organic Oranges',
+      //   brand: 'Marketside',
+      //   quantity: 88,
+      //   price: 6.88
+      // },
+      // {
+      //   name: 'Oranges',
+      //   brand: 'Great Value',
+      //   quantity: 38,
+      //   price: 4.98
+      // },
+      // //Zucchini/Squash/Onion/Peppers
+      // {
+      //   name: 'Zucchini',
+      //   brand: 'Great Value',
+      //   quantity: 39,
+      //   price: .98
+      // },
+      // {
+      //   name: 'Squash',
+      //   brand: 'Great Value',
+      //   quantity: 23,
+      //   price: .89
+      // },
+      // {
+      //   name: 'Yellow Onion',
+      //   brand: 'Great Value',
+      //   quantity: 54,
+      //   price: .45
+      // },
+      // {
+      //   name: 'Red oNion',
+      //   brand: 'Great Value',
+      //   quantity: 43,
+      //   price: .45
+      // },
+      // {
+      //   name: 'Red Peppers',
+      //   brand: 'Great Value',
+      //   quantity: 23,
+      //   price: 1.48
+      // },
+      // {
+      //   name: '3-Pack Assorted Peppers',
+      //   brand: 'Great Value',
+      //   quantity: 12,
+      //   price: 3.58
+      // },
+      // //Tomatoes/Asparagus/Broccoli/Lettuce
+      // {
+      //   name: 'Roma Tomatoes',
+      //   brand: 'Great Value',
+      //   quantity: 23,
+      //   price: .26
+      // },
+      // {
+      //   name: 'Grape Tomatoes',
+      //   brand: 'Great Value',
+      //   quantity: 38,
+      //   price: 1.48
+      // },
+      // {
+      //   name: 'Asparagus',
+      //   brand: 'Marketside',
+      //   quantity: 3,
+      //   price: 4.18
+      // },
+      // {
+      //   name: 'Broccoli',
+      //   brand: 'Great Value',
+      //   quantity: 33,
+      //   price: 1.31
+      // },
+      // {
+      //   name: 'Broccoli',
+      //   brand: 'Marketside',
+      //   quantity: 23,
+      //   price: 2.78
+      // },
+      // {
+      //   name: 'Iceburg Lettuce',
+      //   brand: 'Green Giant',
+      //   quantity: 19,
+      //   price: 1.48
+      // },
+      // {
+      //   name: 'Shredded Iceburg Lettuce',
+      //   brand: 'Marketside',
+      //   quantity: 12,
+      //   price: 1.98
+      // },
+      // {
+      //   name: 'Romaine Lettuce',
+      //   brand: 'Great Value',
+      //   quantity: 21,
+      //   price: 2.62
+      // },
+      // //Celery/Carrots/Corn/Green Onions
+      // {
+      //   name: 'Celery',
+      //   brand: 'Dole',
+      //   quantity: 12,
+      //   price: 1.47
+      // },
+      // {
+      //   name: 'Carrots',
+      //   brand: 'Bolthouse',
+      //   quantity: 19,
+      //   price: 1.92
+      // },
+      // {
+      //   name: 'Corn',
+      //   brand: 'Great Value',
+      //   quantity: 22,
+      //   price: .50
+      // },
+      // {
+      //   name: 'Green Onions',
+      //   brand: 'Great Value',
+      //   quantity: 83,
+      //   price: .48
+      // },
+      // //Cooking
+      // //Sauces
+      // {
+      //   name: 'Ketchup',
+      //   brand: 'Heinz',
+      //   quantity: 190,
+      //   price: 1.48
+      // },
+      // {
+      //   name: 'Mustard',
+      //   brand: 'Heinze',
+      //   quantity: 159,
+      //   price: 1.76
+      // },
+      // {
+      //   name: 'Ranch',
+      //   brand: 'Hidden Valley',
+      //   quantity: 83,
+      //   price: 2.39
+      // },
+      // {
+      //   name: 'Mayonaise',
+      //   brand: 'Duke\'s',
+      //   quantity: 89,
+      //   price: 1.98
+      // },
+      // {
+      //   name: 'BBQ Sauce',
+      //   brand: 'Sweet Baby Ray\'s',
+      //   quantity: 123,
+      //   price: 1.97
+      // },
+      // {
+      //   name: 'Steak Sauce',
+      //   brand: 'A1',
+      //   quantity: 198,
+      //   price: 1.78
+      // },
+      // //Sugars
+      // {
+      //   name: 'Granulated Sugar',
+      //   brand: 'Great Value',
+      //   quantity: 12,
+      //   price: 2.57
+      // },
+      // {
+      //   name: 'Cane Sugar',
+      //   brand: 'C & H',
+      //   quantity: 32,
+      //   price: 3.25
+      // },
+      // {
+      //   name: 'Pure Cane Sugar',
+      //   brand: 'Morena',
+      //   quantity: 43,
+      //   price: 3.18
+      // },
+      // {
+      //   name: 'Granulated Sugar',
+      //   brand: 'Domino',
+      //   quantity: 54,
+      //   price: 3.34
+      // },
+      // //Spices
+      // {
+      //   name: 'Garlic Parmesan',
+      //   brand: 'Weber',
+      //   quantity: 44,
+      //   price: 4.42
+      // },
+      // {
+      //   name: 'Seasoned Salt',
+      //   brand: 'Lawrys',
+      //   quantity: 78,
+      //   price: 3.68
+      // },
+      // {
+      //   name: 'Ground Cinnamon',
+      //   brand: 'Great Value',
+      //   quantity: 82,
+      //   price: 1.18
+      // },
+      // {
+      //   name: 'Garlic Powder',
+      //   brand: 'McCormick',
+      //   quantity: 87,
+      //   price: 6.50
+      // },
+      // {
+      //   name: 'Paprika',
+      //   brand: 'Great Value',
+      //   quantity: 100,
+      //   price: 1.00
+      // },
+      // {
+      //   name: 'Ground Cumin',
+      //   brand: 'Great Value',
+      //   quantity: 29,
+      //   price: 1.28
+      // },
+      // //Flour
+      // {
+      //   name: 'All-Purpose Flour',
+      //   brand: 'Great Value',
+      //   quantity: 12,
+      //   price: 2.12
+      // },
+      // {
+      //   name: 'Cake Flour',
+      //   brand: 'Swans Down',
+      //   quantity: 45,
+      //   price: 3.52
+      // },
+      // {
+      //   name: 'All-Purpose flour',
+      //   brand: 'Gold Medal',
+      //   quantity: 45,
+      //   price: 3.64
+      // },
+      // //Alcohol
+      // //Red Wine
+      // {
+      //   name: 'Red Wine Blend',
+      //   brand: 'Apothic',
+      //   quantity: 10,
+      //   price: 11.73
+      // },
+      // {
+      //   name: 'Cabernet Sauvignon',
+      //   brand: 'Robert Mondavi',
+      //   quantity: 12,
+      //   price: 8.48
+      // },
+      // {
+      //   name: 'Sweet Red Blend',
+      //   brand: 'Duplin',
+      //   quantity: 3,
+      //   price: 7.48
+      // },
+      // {
+      //   name: 'Merlot',
+      //   brand: 'Oak Leaf',
+      //   quantity: 23,
+      //   price: 2.96
+      // },
+      // //White Wine
+      // {
+      //   name: 'Pinot Grigio',
+      //   brand: 'Oak Leaf',
+      //   quantity: 24,
+      //   price: 2.96
+      // },
+      // {
+      //   name: 'Pinot Grigio',
+      //   brand: 'Barefoot',
+      //   quantity: 12,
+      //   price: 11.48
+      // },
+      // {
+      //   name: 'Chardonnay',
+      //   brand: 'J. Lohr',
+      //   quantity: 27,
+      //   price: 13.48
+      // },
+      // {
+      //   name: 'Sauvignon Blanc',
+      //   brand: 'Cupcake',
+      //   quantity: 1,
+      //   price: 7.98
+      // },
+      // //Domestic Beer
+      // {
+      //   name: 'Light Beer',
+      //   brand: 'Michelob ULTRA',
+      //   quantity: 20,
+      //   price: 20.48
+      // },
+      // {
+      //   name: 'Light Beer',
+      //   brand: 'Bud Light',
+      //   quantity: 23,
+      //   price: 18.48
+      // },
+      // {
+      //   name: 'Light Beer',
+      //   brand: 'Miller Lite',
+      //   quantity: 24,
+      //   price: 18.48
+      // },
+      // //Craft Beer
+      // {
+      //   name: 'IPA Craft Beer',
+      //   brand: 'Elysian',
+      //   quantity: 12,
+      //   price: 12.48
+      // },
+      // {
+      //   name: '420 Extra Pale Ale',
+      //   brand: 'Sweetwater',
+      //   quantity: 24,
+      //   price: 17.48
+      // },
+      // {
+      //   name: 'Summer Shandy',
+      //   brand: 'Leinenkugel',
+      //   quantity: 11,
+      //   price: 9.48
+      // },
+      // {
+      //   name: 'IPA Craft Beer',
+      //   brand: 'Goose Island',
+      //   quantity: 14,
+      //   price: 16.98
+      // },
+      // //Frozen Drinks
+      // {
+      //   name: 'Escapes Variety Pack',
+      //   brand: 'Seagrams',
+      //   quantity: 18,
+      //   price: 14.48
+      // },
+      // {
+      //   name: 'Italian Ice',
+      //   brand: 'Seagrams',
+      //   quantity: 12,
+      //   price: 14.48
+      // },
+      // {
+      //   name: 'Strawberry Margarita',
+      //   brand: 'Daily\'s',
+      //   quantity: 22,
+      //   price: 1.88
+      // },
+      // {
+      //   name: 'Bahama Mama',
+      //   brand: 'Daily\'s',
+      //   quantity: 19,
+      //   price: 1.88
+      // },
+      // {
+      //   name: 'Hurricane',
+      //   brand: 'Daily\'s',
+      //   quantity: 7,
+      //   price: 1.88
+      // },
   ])
    
   },
