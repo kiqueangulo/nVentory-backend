@@ -9,7 +9,7 @@ const { Op } = require('sequelize')
 // LIST ALL LOCATIONS
 location.get('/', async (req, res) => {
     try {
-        const foundLocation = await Locations.findAll()
+        const foundLocation = await Locations.findAll()  
         console.log(foundLocation)
         res.status(200).json(foundLocation)
     } catch (error) {
