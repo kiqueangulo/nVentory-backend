@@ -11,9 +11,9 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate({ ProductDetails }) {
       // define association here
-      Locations.hasOne(ProductDetails,{
+      Locations.belongsTo(ProductDetails,{
         foreignKey: "product_id",
-        as: "product"
+        as: "products"
       })
     }
   }
