@@ -32,7 +32,7 @@ This is a PERN application. It uses Heroku and includes Heroku-postgres-database
 
 ## Contributing
 
-[CONTRIBUTERS](https://github.com/kiqueangulo/nVentory-backend/graphs/contributors?from=2022-07-10&to=2022-07-27&type=a) include Collin Blank and Jay Brewer with reviews from Enrique Angulo AJ Phoenix.
+[CONTRIBUTERS](https://github.com/kiqueangulo/nVentory-backend/graphs/contributors?from=2022-07-10&to=2022-07-27&type=a) include Collin Blank and Jay Brewer with reviews from Enrique Angulo and AJ Phoenix.
 
 ## Bugs/Unfinished Goals
 - Wish we could have finished the at-home "proxy" creating a secure-key so random front end applications are not able to call our database and use it or mess it up with malicious intent. 
