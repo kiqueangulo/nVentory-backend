@@ -11,10 +11,9 @@ products.get('/', async (req, res) => {
     try {
         const foundProducts = await ProductDetails.findAll({
             where: {
-                [Op.and]: [
-                    { name: {[Op.like ]: `%${req.query.name ?? ""}%`}},
-                    { brand: {[Op.like ]: `%${req.query.brand ?? ""}%`}}
-                ]
+                     name: {[Op.like ]: `%${req.query.name ?? ""}%`},
+                     brand: {[Op.like ]: `%${req.query.brand ?? ""}%`}
+                
             }
         });
         console.log(foundProducts)
