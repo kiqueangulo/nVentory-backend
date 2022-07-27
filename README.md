@@ -19,7 +19,7 @@ npm install
 ```
 # Our Database Layout to start
 
-![Database](https://github.com/kiqueangulo/nVentory-backend/blob/main/Database.png)
+![Database](https://github.com/kiqueangulo/nVentory-backend/blob/main/images/Database.png)
 
 # The technologies used to build the application
 This is a PERN application. It uses Heroku and includes Heroku-postgres-database.  The backend also included the use of pgadmin and draw.io for tracing, creating and maintaining the database.
