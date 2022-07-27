@@ -4,7 +4,7 @@ The nVentory application was thought of by AJ Phoenix from working at a wine sto
 
 ## Landing Page
 
-![images/]
+![nVenotry](https://github.com/kiqueangulo/nVentory-backend/blob/Jay/images/nventory_home_page.png)
 
 ## Getting Started
 
@@ -42,25 +42,4 @@ This is a PERN application. It uses Heroku and includes Heroku-postgres-database
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-
-# nVentory-backend
-nVentory server side.
-
-# inspiration for the application
-
-
-
-
-# Bugs or unfinished functionality
-
-
-# Our Database Layout to start
-
-![Database](https://github.com/kiqueangulo/nVentory-backend/blob/main/Database.png)
 
