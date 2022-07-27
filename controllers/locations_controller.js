@@ -2,7 +2,7 @@
 const location = require('express').Router()
 const db = require('../models')
 const {  Locations, ProductDetails } = db 
-const { Op } = require('sequelize')
+
 
 // LIST ALL LOCATIONS
 location.get('/', async (req, res) => {
