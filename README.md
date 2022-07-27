@@ -1,16 +1,66 @@
-# nVentory-backend
-nVentory server side.
+# nVentory-Backend
 
-# inspiration for the application
-This project was thought of by AJ and the inspiration comes from using Shopify and having a cleaner and easier system for tracking inventory. 
+The nVentory application was thought of by AJ Phoenix from working at a wine store which uses Shopify to manage inventory. The slow process of organizng the space availible inspired AJ to build a cleaner and easier system for tracking inventory. 
+
+## Landing Page
+
+![images/]
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+```
+npm install
+```
+# Our Database Layout to start
+
+![Database](https://github.com/kiqueangulo/nVentory-backend/blob/main/Database.png)
 
 # The technologies used to build the application
 This is a PERN application. It uses Heroku and includes Heroku-postgres-database.  The backend also included the use of pgadmin and draw.io for tracing, creating and maintaining the database.
 
-# Bugs or unfinished functionality
-- Wish we could have finished the at-home "proxy" creating a secure-key so that not just any front end can call our database and use it or mess it up with malicious intent. 
+## Backend Built With
+
+* [Heroku](https://dashboard.heroku.com/apps) - Deployment Method
+* [Express](https://expressjs.com/) - Web Application Framework
+* [PostgreSQL](https://www.postgresql.org/) - Realational Database Management System
+
+## Contributing
+
+[CONTRIBUTERS](https://github.com/kiqueangulo/nVentory-backend/graphs/contributors?from=2022-07-10&to=2022-07-27&type=a) include Collin Blank and Jay Brewer with reviews from Enrique Angulo AJ Phoenix.
+
+## Bugs/Unfinished Goals
+- Wish we could have finished the at-home "proxy" creating a secure-key so random front end applications are not able to call our database and use it or mess it up with malicious intent. 
 - Adding limit and offset to the application would definitely be needed for a large store inventory.  We had a decent amount at 200 pieces but a larger store would not want to load all products at once. 
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
+
+
+# nVentory-backend
+nVentory server side.
+
+# inspiration for the application
+
+
+
+
+# Bugs or unfinished functionality
+
 
 # Our Database Layout to start
 
 ![Database](https://github.com/kiqueangulo/nVentory-backend/blob/main/Database.png)
+
