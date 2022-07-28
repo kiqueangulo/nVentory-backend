@@ -2,6 +2,12 @@
 
 The nVentory application was thought of by AJ Phoenix from working at a wine store which uses Shopify to manage inventory. The slow process of organizng the space availible inspired AJ to build a cleaner and easier system for tracking inventory. 
 
+## Link to front-end nVentory project
+[nVentory front-end git repo](https://github.com/kiqueangulo/nVentory-frontend)
+
+## Link to front-end Heroku project
+[nVentory front-end Deployed](https://nventory-frontend.herokuapp.com/)
+
 ## Landing Page
 
 ![nVenotry](https://github.com/kiqueangulo/nVentory-backend/blob/Jay/images/nventory_home_page.png)
